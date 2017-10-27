@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Acme Product Management</title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+</head>
+<body ng-app="productManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    Acme Product Management
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-include="'app/product/productListView.html'"></div>
+    </div>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <script src="app/Product/productListCtrl.js"></script>
+</body>
+</html>
